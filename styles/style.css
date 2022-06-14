@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+/* Login Page */
+
+body {
+  background-color: #d3f2e9;
+}
+
+html {
+  font-family: 'Roboto Slab', serif;
+  font-size: 10px;
+}
+
+section {
+  text-align: center;
+}
+
+header {
+  align-items: center;
+  background-color: #a5c6bc;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+  padding: 2rem 7rem;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.app-title {
+  color: #08706e;
+  font-size: 4.5rem;
+  margin: 0;
+}
+
+article {
+  margin-top: 2rem;
+}
+
+form,
+.account-information-con {
+  background-color: #a5c6bc;
+  border-radius: 2rem;
+  border: 1px solid #000;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 42rem;
+}
+
+.sub-title {
+  color: #08706e;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.labels {
+  color: #659991;
+  font-size: 2.1rem;
+  margin: 0 3.5rem;
+  text-align: left;
+}
+
+.inputs {
+  font-size: 2rem;
+  margin: 1rem auto 2rem;
+  padding: 1rem 0.3rem;
+  width: 34rem;
+}
+
+.button {
+  border-radius: 0 0 2rem 2rem;
+  border-top: 0.1rem solid black;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  height: 5.3rem;
+  margin-top: 2.9rem;
+}
+
+#login-button:hover,
+#register-button:hover {
+  background-color: #659991;
+  color: #fff;
+}
+
+.additional-options-tab {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 42rem;
+}
+
+.forgot-password,
+.register-now,
+.login-now {
+  color: #08706e;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2rem 2rem;
+}
+
+.forgot-password:hover,
+.register-now:hover,
+.login-now:hover {
+  color: #659991;
+}
+
+/* Dashboard */
+
+.button-2 {
+  border-radius: 1rem;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 1.8rem;
+  height: 4rem;
+  width: 12rem;
+}
+
+.button-2:hover {
+  background-color: #659991;
+  color: #fff;
+}
+
+.active-button {
+  background-color: #659991;
+  color: #fff;
+}
+
+.active-button:hover {
+}
+
+.button-3 {
+  border-radius: 1rem;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 1.8rem;
+  height: 6rem;
+  width: 18rem;
+}
+
+#exercise-desc {
+  height: 10rem;
+}
+
+/* Exercises display */
+
+.exercises-con {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  row-gap: 6rem;
+}
+
+.exercise {
+  background-color: #a5c6bc;
+  border-radius: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 38rem;
+  width: 34rem;
+}
+
+.exercise-name-display {
+  color: #08706e;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.exercise-video-display {
+  display: block;
+  margin: 0 auto;
+}
+
+.exercise-desc-display {
+  color: #659991;
+  font-size: 1.2rem;
+  margin: 2rem 2rem;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 2rem;
+  margin: auto;
+  text-align: left;
+  width: 90rem;
+}
+
+thead {
+  background-color: #000;
+  color: #fff;
+}
+
+tbody {
+  background-color: #659991;
+  color: #fff;
+}
+
+td,
+th {
+  width: 10%;
+  border: 0.2rem solid #000;
+  padding: 1rem;
+}
+
+td:nth-child(1),
+th:nth-child(1) {
+  width: 20%;
+}
+
+td:last-child,
+th:last-child {
+  width: 50%;
+}
+
+/* Profile display */
+
+.profile {
+  margin-left: 2rem;
+  position: relative;
+}
+
+.profile-image {
+  background-position: center;
+  background-size: cover;
+  background: url('../images/default.png');
+  border-radius: 50%;
+  cursor: pointer;
+  height: 4rem;
+  width: 4rem;
+  margin: 0 auto;
+}
+
+.profile-name {
+  margin: 0.2rem 0 0;
+  text-align: center;
+}
+
+.profile-overlay:hover {
+  opacity: 0.5;
+  transition-duration: 0.4s;
+}
+
+.profile-overlay {
+  background-color: #000;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 4rem;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 4rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* Settings */
+
+.account-information-con {
+  width: 60rem;
+  justify-content: start;
+}
+
+.account-information {
+  display: flex;
+  padding: 1rem 2rem 0;
+  gap: 2rem;
+}
+
+.email-title,
+.name-title {
+  font-size: 2rem;
+  color: #08706e;
+}
+
+.user-email,
+.user-name {
+  font-size: 2rem;
+  color: #08706e;
+  opacity: 0.5;
+}
+
+.change-password {
+  text-align: left;
+  font-size: 1.3rem;
+  color: #08706e;
+  padding: 1rem 2rem 2rem;
+}
+
+/* Modal */
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  height: 25rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.error-icon {
+  display: block;
+  width: 20rem;
+  margin: auto;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.error-msg {
+  color: #de2c2c;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-top: 3rem;
+  text-align: center;
+}
